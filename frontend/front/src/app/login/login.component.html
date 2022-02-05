@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="title">Welcome</h1>
+    <form  #login="ngForm" (ngSubmit)="submit(login)">
+        <div class="form-group">
+            <label for="eMail">E-Mail</label><br>
+            <input #eMail="ngModel" required minlength="2" name="eMail"  id="eMail" type="email" class="form-control" ngModel>
+            <div *ngIf="eMail.touched && eMail.invalid" class="alert alert-danger">E-Mail is Invalid</div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label><br>
+            <input #password="ngModel" required minlength="2" name="password" type="password" id="password" class="form-control" ngModel><br>
+            <div *ngIf="password.touched && password.invalid" class="alert alert-danger">Password is Invalid</div>
+        </div>
+        <div class="form-group d-block">
+            <button  class="btn btn-primary btn-md btn-block" type="submit">LOGIN</button>
+            <div *ngIf="login.form.errors" class="alert alert-danger">Account is Invalid</div>
+        </div>
+    </form>
+</div>
