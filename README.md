@@ -7,7 +7,7 @@
 ![login screen](/frontend/Login.png)
 <hr>
 
-### First data is getting with another API to my database with .net core, then i prepared get method to send my backend.
+### First data is getting with another API to my database with .net core, then i prepared get method to send from my backend application.
 
 ![chart screen](/frontend/chart.png)
 
@@ -28,4 +28,6 @@
     <li>Bootstrap
     <li>npx-echart
 </ul>
+
+
 #### Frontend-Backend communication made with API's.
